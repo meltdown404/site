@@ -111,7 +111,7 @@ button {
 /* --- Navigation --- */
 .nav {
   position: absolute;
-  top: 60vh; /* Move nav below the large title based on reference image */
+  top: 75vh; /* Moved down to avoid overlapping the hero logo */
   left: 0;
   width: 100%;
   z-index: 1000;
@@ -142,15 +142,16 @@ button {
 
 .nav-links {
   display: flex;
+  flex-direction: column; /* Changed to vertical list based on request */
   list-style: none;
-  gap: 32px;
+  gap: 16px;
   align-items: center;
 }
 
 .nav-links a {
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 800; /* Bold font like reference */
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--accent-primary); /* Purple text */
   transition: var(--transition-fast);
@@ -253,7 +254,7 @@ button {
 
 .hero-title-wrapper {
   width: 100%;
-  max-width: 800px; /* Adjust based on logo size */
+  max-width: 550px; /* Scaled down explicitly based on user request */
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -351,7 +352,10 @@ button {
 
 /* --- Gallery Section --- */
 .gallery-filters {
-  display: none; /* Hide filters to simplify UI */
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 32px;
 }
 
 .gallery-grid {
@@ -377,7 +381,8 @@ button {
 .gallery-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain; /* Adjusted per request to avoid cropping tall images */
+  background: transparent; /* Changed to transparent if they want the square black box to show behind */
 }
 
 .gallery-overlay {
