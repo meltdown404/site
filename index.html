@@ -9,6 +9,7 @@
   <meta property="og:title" content="MELTDOWN | Illustrator & Designer">
   <meta property="og:description" content="イラストレーター＆デザイナー MELTDOWN のポートフォリオサイト">
   <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -26,11 +27,15 @@
     <div class="nav-inner">
       <a href="#" class="nav-logo">MELTDOWN</a>
       <ul class="nav-links">
+        <li><a href="#about">Profile</a></li>
         <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#shop">Shop</a></li>
         <li><a href="#sns">SNS</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <a href="#shop" class="nav-shop-btn">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        Shop
+      </a>
       <button class="hamburger" aria-label="メニューを開く">
         <span></span>
         <span></span>
@@ -41,6 +46,7 @@
 
   <!-- Mobile Menu -->
   <div class="mobile-menu">
+    <a href="#about">Profile</a>
     <a href="#gallery">Gallery</a>
     <a href="#shop">Shop</a>
     <a href="#sns">SNS</a>
@@ -68,6 +74,56 @@
     </div>
   </section>
 
+  <!-- About Section -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">About Me</span>
+        <h2 class="section-title">Profile</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="about-content reveal">
+        <div class="about-image">
+          <img src="images/profile.png" alt="MELTDOWN プロフィール画像">
+        </div>
+        <div class="about-info">
+          <h3 class="about-name">MELTDOWN</h3>
+          <p class="about-role">Illustrator & Designer</p>
+          <p class="about-bio">
+            イラスト・デザイン制作をしています。<br>
+            イベントフライヤーやキャラクターイラスト、グッズデザインなど幅広く承ります。<br>
+            お気軽にご相談ください。
+          </p>
+
+          <div class="about-skills">
+            <h4 class="about-skills-title">使用ソフト</h4>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <svg role="img" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><title>Adobe Photoshop</title><path d="M9.85 8.42c-.37-.15-.77-.21-1.18-.2-.26 0-.49 0-.68.01-.2-.01-.34 0-.41.01v3.36c.14.01.27.02.39.02h.53c.39 0 .78-.06 1.15-.18.32-.09.6-.28.82-.53.21-.25.31-.59.31-1.03.01-.31-.07-.62-.23-.89-.17-.26-.41-.46-.7-.57zM19.75.3H4.25C1.9.3 0 2.2 0 4.55v14.899c0 2.35 1.9 4.25 4.25 4.25h15.5c2.35 0 4.25-1.9 4.25-4.25V4.55C24 2.2 22.1.3 19.75.3zm-7.391 11.65c-.399.56-.959.98-1.609 1.22-.68.25-1.43.34-2.25.34-.24 0-.4 0-.5-.01s-.24-.01-.43-.01v3.209c.01.07-.04.131-.11.141H5.52c-.08 0-.12-.041-.12-.131V6.42c0-.07.03-.11.1-.11.17 0 .33 0 .56-.01.24-.01.49-.01.76-.02s.56-.01.87-.02c.31-.01.61-.01.91-.01.82 0 1.5.1 2.06.31.5.17.96.45 1.34.82.32.32.57.71.73 1.14.149.42.229.85.229 1.3.001.86-.199 1.57-.6 2.13zm7.091 3.89c-.28.4-.671.709-1.12.891-.49.209-1.09.318-1.811.318-.459 0-.91-.039-1.359-.129-.35-.061-.7-.17-1.02-.32-.07-.039-.121-.109-.111-.189v-1.74c0-.029.011-.07.041-.09.029-.02.06-.01.09.01.39.23.8.391 1.24.49.379.1.779.15 1.18.15.38 0 .65-.051.83-.141.16-.07.27-.24.27-.42 0-.141-.08-.27-.24-.4-.16-.129-.489-.279-.979-.471-.51-.18-.979-.42-1.42-.719-.31-.221-.569-.51-.761-.85-.159-.32-.239-.67-.229-1.021 0-.43.12-.84.341-1.21.25-.4.619-.72 1.049-.92.469-.239 1.059-.349 1.769-.349.41 0 .83.03 1.24.09.3.04.59.12.86.23.039.01.08.05.1.09.01.04.02.08.02.12v1.63c0 .04-.02.08-.05.1-.09.02-.14.02-.18 0-.3-.16-.62-.27-.96-.34-.37-.08-.74-.13-1.12-.13-.2-.01-.41.02-.601.07-.129.03-.24.1-.31.2-.05.08-.08.18-.08.27s.04.18.101.26c.09.11.209.2.34.27.229.12.47.23.709.33.541.18 1.061.43 1.541.73.33.209.6.49.789.83.16.318.24.67.23 1.029.011.471-.129.94-.389 1.331z"/></svg>
+                </div>
+                <span>Adobe Photoshop</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <svg role="img" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><title>Adobe Illustrator</title><path d="M10.53 10.73c-.1-.31-.19-.61-.29-.92-.1-.31-.19-.6-.27-.89-.08-.28-.15-.54-.22-.78h-.02c-.09.43-.2.86-.34 1.29-.15.48-.3.98-.46 1.48-.14.51-.29.98-.44 1.4h2.54c-.06-.211-.14-.46-.23-.721-.09-.269-.18-.559-.27-.859zM19.75.3H4.25C1.9.3 0 2.2 0 4.55v14.9c0 2.35 1.9 4.25 4.25 4.25h15.5c2.35 0 4.25-1.9 4.25-4.25V4.55C24 2.2 22.1.3 19.75.3zM14.7 16.83h-2.091c-.069.01-.139-.04-.159-.11l-.82-2.38H7.91l-.76 2.35c-.02.09-.1.15-.19.141H5.08c-.11 0-.14-.061-.11-.18L8.19 7.38c.03-.1.06-.21.1-.33.04-.21.06-.43.06-.65-.01-.05.03-.1.08-.11h2.59c.08 0 .12.03.13.08l3.65 10.3c.03.109 0 .16-.1.16zm3.4-.15c0 .11-.039.16-.129.16H16.01c-.1 0-.15-.061-.15-.16v-7.7c0-.1.041-.14.131-.14h1.98c.09 0 .129.05.129.14v7.7zm-.209-9.03c-.231.24-.571.37-.911.35-.33.01-.65-.12-.891-.35-.23-.25-.35-.58-.34-.92-.01-.34.12-.66.359-.89.242-.23.562-.35.892-.35.391 0 .689.12.91.35.22.24.34.56.33.89.01.34-.11.67-.349.92z"/></svg>
+                </div>
+                <span>Adobe Illustrator</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <svg role="img" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><title>CLIP STUDIO PAINT</title><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.5 12.5a4.5 4.5 0 0 1-7 0 4.5 4.5 0 0 1 0-5 4.5 4.5 0 0 1 7 0 4.5 4.5 0 0 1 0 5zM12 14.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/></svg>
+                </div>
+                <span>CLIP STUDIO PAINT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Gallery Section -->
   <section class="section" id="gallery">
     <div class="container">
@@ -91,7 +147,7 @@
         <div class="gallery-item reveal" data-category="other" data-lightbox>
           <img src="images/gallery_2.jpg" alt="Gallery Image 2" loading="lazy">
         </div>
-        <div class="gallery-item reveal" data-category="illustration" data-lightbox>
+        <div class="gallery-item reveal" data-category="other" data-lightbox>
           <img src="images/gallery_3.jpg" alt="Gallery Image 3" loading="lazy">
         </div>
         <div class="gallery-item reveal" data-category="other" data-lightbox>
