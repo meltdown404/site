@@ -50,6 +50,7 @@ table {
 /* Ensure images don't completely overflow but still look clunky */
 img {
     max-width: 300px;
+    height: auto;
     border: 0;
 }
 
@@ -58,4 +59,45 @@ marquee {
     background-color: #000000;
     border: 2px dashed #ff0000;
     padding: 5px;
+}
+
+/* Responsive Styles for Smartphones */
+@media screen and (max-width: 768px) {
+    /* Stack the sidebar and main content */
+    table, tr, td {
+        display: block !important;
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+    
+    .menu-col {
+        border-right: none !important;
+        border-bottom: 5px solid #ff00ff;
+        padding-bottom: 20px;
+    }
+    
+    /* Make images fit the screen */
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    
+    /* Adjust WordArt sizes for small screens */
+    .wordart-title {
+        font-size: 32px !important;
+        letter-spacing: 2px !important;
+    }
+    
+    .wordart {
+        font-size: 24px !important;
+    }
+
+    /* Padding adjustments for mobile */
+    td {
+        padding: 20px !important;
+    }
+    
+    marquee {
+        width: 100% !important;
+    }
 }
